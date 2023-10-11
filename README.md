@@ -3,7 +3,7 @@ _This repo is a reference clone of the original private docker image repo, which
 disabled for public repos._
 
 Maintenance  image for Mastodon dockerized deployment.
-It runs in an infinity loop to emulate CronJob dirty way.
+It runs in an infinity loop to emulate CronJob in a dirty way.
 To be used with [myHomeBee home server](https://github.com/mdefenders/myHomeBee.git)
 
 ## Image-related Configuration
