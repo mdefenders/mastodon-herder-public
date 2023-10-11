@@ -4,6 +4,7 @@ disabled for public repos._
 
 Maintenance  image for Mastodon dockerized deployment.
 It runs in an infinity loop to emulate CronJob's dirty way.
+To be used with [myHomeBee home server](https://github.com/mdefenders/myHomeBee.git)
 
 ## Image-related Configuration
 ### Build args
