@@ -1,9 +1,9 @@
 # Mastodon Herder
-_This repo is a demo clone of the actual docker image source repo, because I prefer to use self-hosted runners, 
+_This repo is a demo clone of the docker image source repo because I prefer to use self-hosted runners, 
 disabled for public repos for security._
 
 Maintenance  image for Mastodon dockerized deployment.
-Runs in infinity loop to emulate CronJob dirty way.
+It runs in an infinity loop to emulate CronJob's dirty way.
 
 ## Image-related Configuration
 ### Build args
@@ -11,7 +11,7 @@ Runs in infinity loop to emulate CronJob dirty way.
 - DOCKER_GUID - Docker group UID for your host operating system
 
 ### Runtime Vars
-- BACKUP_SLEEP_BEFORE - seconds to sleep beefore a maintenance
+- BACKUP_SLEEP_BEFORE - seconds to sleep before a maintenance
 - BACKUP_SLEEP_BEFORE - seconds to sleep after a maintenance
 - DB_PASS, DB_HOST, DB_PORT, DB_NAME, DB_USER - postgres db parameters
 
