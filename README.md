@@ -1,6 +1,6 @@
 # Mastodon Herder
-_This repo is a demo clone of the docker image source repo because I prefer to use self-hosted runners, 
-disabled for public repos for security._
+_This repo is a reference clone of the original private docker image repo, which uses self-hosted GitHub Actions runners, 
+disabled for public repos._
 
 Maintenance  image for Mastodon dockerized deployment.
 It runs in an infinity loop to emulate CronJob's dirty way.
