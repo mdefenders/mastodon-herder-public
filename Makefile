@@ -19,13 +19,13 @@ help: ## This help.
 # DOCKER TASKS
 # Build the container
 build: ## Build the container
-	docker build --build-arg="${MASTODON_VERSION}" --build-arg="${DOCKER_GUID}" -t $(APP_NAME) .
+	docker build --platform $(PLATFORM) --build-arg="${MASTODON_VERSION}" --build-arg="${DOCKER_GUID}" -t $(APP_NAME) .
 
 build-nc: ## Build the container without caching
-	docker build --build-arg="${MASTODON_VERSION}" --build-arg="${DOCKER_GUID}" --no-cache -t $(APP_NAME) .
+	docker build --platform $(PLATFORM) --build-arg="${MASTODON_VERSION}" --build-arg="${DOCKER_GUID}" --no-cache -t $(APP_NAME) .
 
 run: ## Run container on port configured in `config.env`
-	docker run -i -t --rm --env-file=./config.env -p=$(PORT):$(PORT) --name="$(APP_NAME)" $(APP_NAME)
+	docker run --platform $(PLATFORM) -i -t --rm --env-file=./config.env -p=$(PORT):$(PORT) --name="$(APP_NAME)" $(APP_NAME)
 
 
 up: build run ## Run container on port configured in `config.env` (Alias to run)
