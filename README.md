@@ -13,7 +13,7 @@ To be used with [myHomeBee home server](https://github.com/mdefenders/myHomeBee.
 
 ### Runtime Vars
 - BACKUP_SLEEP_BEFORE - seconds to sleep before a maintenance
-- BACKUP_SLEEP_BEFORE - seconds to sleep after a maintenance
+- BACKUP_SLEEP_AFTER - seconds to sleep after a maintenance
 - DB_PASS, DB_HOST, DB_PORT, DB_NAME, DB_USER - postgres db parameters
 
 *Rclone is configured by compose*
